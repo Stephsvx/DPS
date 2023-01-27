@@ -1,0 +1,132 @@
+*{margin: 0;
+    box-sizing: border-box;;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  }
+  
+  .baniere { grid-area: 1 / 1 / 2 / 6; 
+    background-color:#00C6F1;
+    width: auto;
+    height: 100px;
+  }
+
+    .logo { grid-area: 1 / 1 / 2 / 2;
+      position: absolute;
+      width: 204px;
+      height: 189px;
+      left: 0px;
+      top: 0px;
+   }
+
+   .inscription { grid-area: 1 / 4 / 2 / 5; 
+    display: flex; justify-content: center;
+   align-items: center;
+   width: auto;
+ }
+
+ .inscription a{
+   background: #D9D9D9;
+   border: 2px solid #000000;
+   border-radius: 16px;
+   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+
+ .identification{ grid-area: 1 / 5 / 2 / 6;
+  display: flex; justify-content: center;
+  align-items: center;
+  width: auto;
+ }
+
+ .identification a{
+  background: #D9D9D9;
+  border: 2px solid #000000;
+  border-radius: 16px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+ }
+
+ .equipe { grid-area: 2 / 1 / 4 / 3; 
+
+ }
+
+ .photo { grid-area: 2 / 1 / 4 / 6;
+display: flex; justify-content: space-around;}
+
+ .pub2 { grid-area: 4 / 2 / 5 / 5;
+
+ }
+
+ .footer { grid-area: 5 / 1 / 6 / 6; 
+background-color: #000000;
+width: auto;
+height: 100px;
+}
+
+ .mention { grid-area: 5 / 1 / 6 / 2; 
+  width: 334px;
+  height: 108px;
+  left: 8px;
+  top: 909px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 36px;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+
+ .redirection { grid-area: 5 / 2 / 6 / 3;
+  width: 341px;
+  height: 108px;
+  left: 304px;
+  top: 909px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 36px;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+
+ .contact { grid-area: 5 / 3 / 6 / 4;
+  width: 339px;
+  height: 72px;
+  left: 729px;
+  top: 909px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 36px;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+
+ .reseaux { grid-area: 5 / 4 / 6 / 5;
+display: flex; justify-content: space-around;
+align-items: center;
+}
+
+ .logo2 { grid-area: 5 / 5 / 6 / 6; 
+  left: 1518px;
+}
+
+  

@@ -1,0 +1,67 @@
+*{margin: 0;
+    box-sizing: border-box;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .baniere { grid-area: 1 / 1 / 2 / 6;
+        background-color:#00C6F1;
+        width: auto;
+        height: 100px;
+    }
+
+    .logo { grid-area: 1 / 1 / 2 / 2;
+        width: 204px;
+        height: 189px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .client { grid-area: 1 / 4 / 2 / 5;
+        width: 219px;
+        height: 36px;
+        left: 1272px;
+        top: 85px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        
+        color: #000000;
+    }
+
+    .deconnexion { grid-area: 1 / 5 / 2 / 6;
+        display: flex; justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .deconnexion a{
+        background: #D9D9D9;
+        border: 2px solid #000000;
+        border-radius: 16px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        width: 194px;
+height: 36px;
+left: 1606px;
+top: 78px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+
+color: #000000;
+    }
