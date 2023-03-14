@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    text-decoration: none;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+ /*header*/   
+.header { grid-area: 1 / 1 / 2 / 13; 
+    background-color: #00C6F1;
+    height: 100px;
+    flex-wrap: wrap;
+}
+
+.logo { grid-area: 1 / 1 / 2 / 2; 
+    width: 100px;
+    height: 100px;
+}
+
+.identification { grid-area: 1 / 9 / 2 / 11; 
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.identification a {
+    background: #D9D9D9;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inscription { grid-area: 1 / 11 / 2 / 13; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;   
+}
+
+/* Style du bouton qui ouvre le modal */
+.open-modal {
+    background: #D9D9D9;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  /* Style de la case à cocher cachée */
+  .modal-toggle {
+    display: none;
+  }
+  
+  /* Style du modal */
+  .modal {
+    display: none; /* Le modal est caché par défaut */
+    position: fixed; /* Le modal reste en place même si la page défile */
+    z-index: 1; /* Place le modal au-dessus des autres éléments */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largeur du modal */
+    height: 100%; /* Hauteur du modal */
+    overflow: auto; /* Active le défilement si le contenu est trop grand */
+    background-color: rgba(0, 0, 0, 0.4); /* Couleur de fond semi-transparente */
+  }
+  
+  /* Style du contenu du modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centre le contenu du modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Largeur du contenu */
+  }
+  
+  /* Style de la croix pour fermer le modal */
+  .close {
+    color: #aaa;
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Style du textarea */
+  textarea {
+    width: 80%;
+    height: 20px;
+    padding: 12px 20px;
+    /*box-sizing: border-box;*/
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  /* Affiche le modal lorsque la case à cocher est cochée */
+  .modal-toggle:checked + .modal {
+    display: block;
+  }
+
+.client { grid-area: 1 / 11 / 2 / 13; 
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.deconnexion { grid-area: 1 / 9 / 2 / 11; 
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deconnexion a {
+    background: #D9D9D9;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* fin header */
+
+/*barre nav*/
+.nav { grid-area: 2 / 1 / 3 / 13; 
+    height: 50px;
+    background-color: #11D6CA;
+    margin-top: -22px;
+}
+.hamburger { grid-area: 2 / 1 / 3 / 2;
+    margin-top: -10px;
+}
+
+.recherche { grid-area: 2 / 3 / 3 / 6; 
+}
+
+.acceuil { grid-area: 2 / 7 / 3 / 9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -22px;
+    height: 50px;
+}
+
+.acceuil a {
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+
+.nous-contacter { grid-area: 2 / 9 / 3 / 11; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -22px;
+    height: 50px;
+}
+
+.nous-contacter a {
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+
+.panier { grid-area: 2 / 11 / 3 / 13; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -22px;
+    height: 50px;
+}
+
+.panier a {
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+/*fin barre nav*/
+
+/* contenue */
+.equipe { grid-area: 2 / 1 / 10 / 7; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pub-interne { grid-area: 2 / 7 / 10 / 13; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pub-clients { grid-area: 10 / 1 / 12 / 13; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* fin contenue */
+
+/* footer*/
+.footer { grid-area: 12 / 1 / 13 / 13;
+    height: 100px;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.mentions { grid-area: 12 / 1 / 13 / 3; 
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+}
+.menu { grid-area: 12 / 3 / 13 / 5; 
+    color: #FFFFFF;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+
+.menu a {
+    color: #FFFFFF;
+}
+
+.contacts { grid-area: 12 / 5 / 13 / 7; 
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.reseaux { grid-area: 12 / 7 / 13 / 9; 
+color: #FFFFFF;
+}
+
+.paiement { grid-area: 12 / 9 / 13 / 11;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logo2 { grid-area: 12 / 11 / 13 / 13;
+}
+/*fin footer */
+
+/*contenu envoie*/
+.envoi { grid-area: 3 / 3 / 4 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: #D9D9D9;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10px;
+    margin-top: -80px;
+}
+
+.ajouter { grid-area: 3 / 7 / 4 / 9; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: #D9D9D9;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10px;
+    margin-top: -80px;
+}
+
+.nouveau { grid-area: 4 / 3 / 5 / 4; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: #D9D9D9;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10px;
+    margin-top: -150px;
+}
+
+.joindre { grid-area: 4 / 4 / 5 / 5; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: #D9D9D9;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10px;
+    margin-top: -150px;  
+}
+
+.formulaire { grid-area: 5 / 3 / 12 / 12;
+    margin-top: -190px;
+    textarea {
+        width: 95%;
+        height: 350px;
+        resize: none;
+    }    
+}
+/*fin envoi*/
+
+/*contenu message reçu*/
+ /* style pour le bouton Tout sélectionner */
+ .tableau { grid-area: 3 / 1 / 12 / 13;
+    margin-top: -50px;
+    margin-left: 25%;
+   
+}
+
+ #select-all {
+    margin-right: 10px;
+    background-color: rgb(104, 238, 104);
+    border-radius: 20px;
+  }
+  /* style pour le bouton Supprimer */
+  #delete {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  /* style pour la classe "hidden" qui permet de masquer les éléments */
+  .hidden {
+    display: none;
+  }
+
+  thead tr {
+    background-color: #F6F6F8;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px 20px;
+}
+
+tbody tr, td, th {
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+    background-color: #F6F6F8;
+}
+.mail {
+    width: 500px;
+}
