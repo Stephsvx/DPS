@@ -15,118 +15,48 @@
     <div class="deconnexion"><a href="index.html">se deconnecter</a></div>
     <div class="client">Bonjour Arthur</div>
     <div class="nav"> </div>
-    <div class="hamburger"><img src="image/menu.png" alt="logo menu hamburger"></div>
-    <div class="recherche">
-        <form action="/rechercher" method="get">
-            <input id="rechercher" type="text" id="search" name="q" placeholder="Entrez votre recherche ici...">
-            <button type="submit">Rechercher</button>
-        </form>
+      <div class="c-header"></div>
+
+  <input type="checkbox" class="c-btn-toggle"
+  id="btnToggle">
+  <label class="c-btn-icon" for="btnToggle">
+      <div class="c-btn-bar c-btn-bar--diagonal diagonal-1"></div>
+      <div class="c-btn-bar c-btn-bar--horizontal"></div>
+      <div class="c-btn-bar c-btn-bar--diagonal diagonal-2">
+          
+      </div>
+  </label>
+
+  <div class="c-sidebar">
+      <ul class="c-sidebar-items">
+          <li>cqdsfdngf</li>   
+          <li>cqdsfdngf</li>
+          <li>cqdsfdngf</li>
+          <li>coulisses tech
+              <span> merci de nous suivre</span>
+          </li>
+      </ul>
+  </div>
     </div>
+    <div class="recherche"><a href=""></a> </div>
     <div class="acceuil"><a href="acceuil.html">Acceuil</a></div>
     <div class="nous-contacter"><a href="">Nous contacter</a></div>
-    <div class="panier"><a href="">Panier</a></div>
-    <div class="tableau">
-      <!-- bouton Tout sélectionner -->
-    <button id="select-all">Tout sélectionner</button>
-    <!-- bouton Supprimer -->
-    <button id="delete">Supprimer</button><br/><br/>
-
-    <!-- tableau avec cases à cocher -->
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th class="date">Date</th>
-          <th class="mail">Mail</th>
-          <th class="heure">Heure</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><input type="checkbox" name="case1"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="case1"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="case1"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="case1"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="case1"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="case1"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="case1"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <!-- autres lignes du tableau... -->
-      </tbody>
-    </table>
-    </div>
+    <div class="panier"><a href="panier.html">Panier</a></div>
+    <div class="equipe"><img src="image/equipe.webp" alt="photo de l'equipe"> </div>
+    <div class="pub-interne"><img src="image/la-poste-visiteurs.gif" alt="pub interne"> </div>
+    <div class="pub-clients"><img src="image/baniere de pub.webp" alt="pub client"> </div>
     <div class="footer"> </div>
-        <div class="mentions">Mentions legale<br/>Politique de cookies</div>
-        <div class="menu"><a href="">acceuil<br/></a><a href="">recherche<br/></a><a href="">nous contacter</a></div>
-        <div class="contacts">TEL : 0322289467<br/>MAIL : e.mail@mail.fr</div>
-        <div class="reseaux">Nos reseaux</div>
-        <div class="paiement"><img src="image/logo2.jpg" alt="logo paiement"></div>
-        <div class="logo2"><img src="image/logo.png" alt="logo du site"></div>
-  </div>
-
-  <script>
-    // fonction pour cocher toutes les cases du tableau
-    function selectAll() {
-      var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-      for (var i = 0; i < checkboxes.length; i++) {
-        checkboxes[i].checked = true;
-      }
-    }
-
-    // fonction pour supprimer les lignes sélectionnées du tableau
-    function deleteRows() {
-      var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-      for (var i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) {
-          checkboxes[i].closest('tr').remove();
-        }
-      }
-    }
-
-    // événement au clic sur le bouton Tout sélectionner
-    document.getElementById('select-all').addEventListener('click', function() {
-      selectAll();
-    });
-
-    // événement au clic sur le bouton Supprimer
-    document.getElementById('delete').addEventListener('click', function() {
-      deleteRows();
-    });
-  </script>
-
+    <div class="mentions">Mentions legale<br/>Politique de cookies</div>
+    <div class="menu"><a href="">acceuil<br/></a><a href="">recherche<br/></a><a href="">nous contacter</a></div>
+    <div class="contacts">TEL : 0322289467<br/>MAIL : e.mail@mail.fr</div>
+    <div class="reseaux">Nos reseaux<br/><br/>
+        <a href="https://www.facebook.com/" target="_blank"><img class="facebook" src="image/facebook.png" alt="logo de facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="instagram" src="image/instagram.png" alt="logo d'instagram"></a>
+        <a href="https://twitter.com/?lang=fr" target="_blank"><img class="twitter" src="image/twitter.png" alt="logo de twitter"></a>
+    </div>
+    <div class="paiement"><img src="image/logo2.jpg" alt="logo paiement"></div>
+    <div class="logo2"><img src="image/logo.png" alt="logo du site"></div>
+</div>
 
 </body>
 </html>
